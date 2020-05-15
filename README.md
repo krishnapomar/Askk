@@ -2,7 +2,7 @@
 Askk-Ask or Answer
 </h1>
 <p>
-This project is a web based realtime chat app built on AngularJS 1.x and backend as Google Firebase Realtime Database
+  This project is a web based realtime chat app built on AngularJS 1.x, NodeJS & Google Firebase Realtime Database technologies
 </p>
 <p>
 Author: <b>Krishna Pomar</b><br>
