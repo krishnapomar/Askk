@@ -1,0 +1,27 @@
+<div>
+    <div class="spinner" id="spinner">
+        <img src="../images/spinner.gif" />
+    </div>
+    <div class="domainAnswerBanner" id="domainAnswerBanner">
+        <img async=on ng-src={{questionDetails.chatProfilePic}} onerror="this.src='../images/avatar.png'" />
+        <p class="questionDetail">{{questionDetails.chatMsg}}</p>
+        <span class="questionDetailBy">{{questionDetails.chatBy}}</span>
+        <span><button class="ansButton" ng-click="answerBtn()">Answer / Comment</button></span>
+        <span class="questionDetailTime">{{questionDetails.chatTime}}</span>
+    </div>
+    <div class="seperator"></div>
+    <!--Answer section-->
+    <div class="answerContainer">
+        <div class="dataHeader" id="zeroAnswers"><p>No Answers till now !! Be the first one to answer</p></div>
+        <div data-ng-repeat="answer in answers" ng-cloak>
+            <div class="ansProfilePic"><img async=on ng-src={{answer.commentProfile}} onerror="this.src='../images/avatar.png'" /></div>
+            <div class="chatTail"></div>
+            <div class="answerView">
+                <p class="answerDetail">{{answer.comment}}</p>
+                <span class="answerBy">{{answer.commentBy}}</span>
+                <span class="answerTime">{{answer.commentTime}}</span>
+                <span class="likeBtn"><img src="../images/like_btn.png" /></span>
+            </div>
+        </div>
+    </div>
+</div>
